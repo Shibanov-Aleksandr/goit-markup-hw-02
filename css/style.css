@@ -1,0 +1,91 @@
+:root {
+  --main-color: #757575;
+  --accent-color: #2196f3;
+  --sub-color: #212121;
+  --bg-color: #ffffff;
+}
+/* основний колір тесту: #757575; */
+/* допоміжний колір тексту: #212121 */
+/*  */
+/* body */
+.body {
+  background: #ffffff;
+}
+/* header */
+.header {
+  background-color: var();
+}
+.list {
+  list-style: none;
+}
+.list-nav .link {
+  color: #060606;
+}
+.list-nav :hover {
+  color: var(--accent-color);
+}
+.list-nav :focus {
+  color: var(--accent-color);
+}
+.list-contact .link {
+  color: var(--main-color);
+}
+.list-contact :hover {
+  color: var(--accent-color);
+}
+.list-contact :focus {
+  color: var(--accent-color);
+}
+
+/* main */
+
+/* hero */
+.hero {
+  color: #ffffff;
+  background-color: #2f303a;
+}
+
+.hero-button {
+  background-color: var(--accent-color);
+  color: #ffffff;
+  cursor: pointer;
+}
+
+/* чим ми кращі */
+.privileges {
+  background-color: #e5e5e5;
+}
+.privileges-title {
+  color: var(--sub-color);
+}
+.privileges-subtitle {
+  color: var(--main-color);
+}
+/* чим займаємось */
+.we-do {
+  background-color: #e5e5e5;
+  color: var(--sub-color);
+}
+
+/* команда */
+.team {
+  background-color: #f5f4fa;
+}
+.team-title {
+  color: var(--sub-color);
+}
+.team-subtitle {
+  color: var(--main-color);
+}
+/* підвал */
+
+.footer {
+  background-color: #2f303a;
+}
+.address {
+  color: #ffffff;
+}
+.link-footer {
+  text-decoration: none;
+  color: (255, 255, 255, 0.6);
+}
