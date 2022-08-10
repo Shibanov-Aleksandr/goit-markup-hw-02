@@ -1,91 +1,107 @@
 :root {
-  --main-color: #757575;
+  --main-color-text: #757575;
   --accent-color: #2196f3;
-  --sub-color: #212121;
-  --bg-color: #ffffff;
+  --sub-color-text: #212121;
+  --bg-color-main: #ffffff;
+  --bg-color-sub: #2f303a;
+  --color-text-sub-two: (255, 255, 255, 1);
+  --hero-text: #ffffff;
+  --bg-button: #f5f4fa;
 }
 /* основний колір тесту: #757575; */
 /* допоміжний колір тексту: #212121 */
-/*  */
+/* колір акцента #2196f3 */
+/* колір фону #ffffff */
+
 /* body */
 .body {
-  background: #ffffff;
+  background: var(--bg-color-main);
 }
+/* index */
 /* header */
-.header {
-  background-color: var();
-}
 .list {
   list-style: none;
 }
-.list-nav .link {
-  color: #060606;
+.link-nav {
+  color: var(--sub-color-text);
 }
-.list-nav :hover {
+.link-contacts {
+  color: var(--main-color-text);
+}
+.link-nav:hover,
+.link-contacts:hover,
+.link-footer:hover {
   color: var(--accent-color);
 }
-.list-nav :focus {
+.link-nav:focus,
+.link-contacts:focus,
+.link-footer:focus {
   color: var(--accent-color);
 }
-.list-contact .link {
-  color: var(--main-color);
-}
-.list-contact :hover {
-  color: var(--accent-color);
-}
-.list-contact :focus {
-  color: var(--accent-color);
-}
-
 /* main */
-
 /* hero */
 .hero {
-  color: #ffffff;
-  background-color: #2f303a;
+  background-color: var(--bg-color-sub);
 }
-
+.hero-title {
+  color: var(--hero-text);
+}
 .hero-button {
   background-color: var(--accent-color);
-  color: #ffffff;
+  color: var(--hero-text);
   cursor: pointer;
 }
 
-/* чим ми кращі */
-.privileges {
-  background-color: #e5e5e5;
-}
+/* the better we are */
+
 .privileges-title {
-  color: var(--sub-color);
+  color: var(--sub-color-text);
 }
 .privileges-subtitle {
-  color: var(--main-color);
-}
-/* чим займаємось */
-.we-do {
-  background-color: #e5e5e5;
-  color: var(--sub-color);
+  color: var(--main-color-text);
 }
 
-/* команда */
-.team {
-  background-color: #f5f4fa;
+/* we-do + team*/
+.subject {
+  color: var(--sub-color-text);
 }
-.team-title {
-  color: var(--sub-color);
+/* we-do */
+
+/* team */
+.team-caption {
+  color: var(--sub-color-text);
 }
 .team-subtitle {
-  color: var(--main-color);
+  color: var(--main-color-text);
 }
-/* підвал */
 
-.footer {
-  background-color: #2f303a;
+/* footer */
+.footer-webstudio {
+  background-color: var(--bg-color-sub);
 }
-.address {
-  color: #ffffff;
+.address-webstudio {
+  color: var(--hero-text);
 }
-.link-footer {
-  text-decoration: none;
+.list .link-footer {
   color: (255, 255, 255, 0.6);
+
+  /* portfolio */
+}
+.works-button {
+  background-color: var(--bg-button);
+  color: var(--sub-color-text);
+}
+.works-button:hover {
+  background-color: var(--accent-color);
+  color: var(--hero-text);
+}
+.works-button:focus {
+  background-color: var(--accent-color);
+  color: var(--hero-text);
+}
+.example-title {
+  color: var(--sub-color-text);
+}
+.example-subtitle {
+  color: var(--main-color-text);
 }
