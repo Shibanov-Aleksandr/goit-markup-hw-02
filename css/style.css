@@ -1,3 +1,12 @@
+:root {
+  --main-font-family: "Roboto", sans-serif;
+  --secondary-font-family: "Raleway", sans-serif;
+  --main-fs: 14px;
+  --main-ls: 0.03em;
+  --accent-color: #2196f3;
+  --mail-color-text: #757575;
+  --secondary-color-text: #212121;
+}
 a {
   text-decoration: none;
 }
@@ -6,44 +15,45 @@ a {
 }
 
 /* body */
-.body {
+body {
   background-color: #ffffff;
-  font-family: roboto;
+  color: var(--mail-color-text);
+  font-size: var(--main-fs);
+  font-family: var(--main-font-family);
+  letter-spacing: var(--main-ls);
 }
 /* header */
 .link-webstudio-header {
   color: #000000;
-  font-family: Raleway;
+  font-family: var(--secondary-font-family);
   font-weight: 700;
   font-size: 25px;
   line-height: 1.2;
-  letter-spacing: 0.03em;
 }
 .logo-web {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 .link-nav {
-  color: #212121;
+  color: var(--secondary-color-text);
   font-weight: 500;
-  font-size: 14px;
+
   line-height: 1.15;
   letter-spacing: 0.02em;
 }
 .link-nav:hover,
+.link-nav:focus {
+  color: var(--accent-color);
+}
 .link-contacts-header:hover,
-.link-footer-contacts:hover {
-  color: #2196f3;
+.link-contacts-header:focus {
+  color: var(--accent-color);
 }
-.link-nav:focus,
-.link-contacts-header:focus,
-.link-footer-contacts:focus {
-  color: #2196f3;
-}
+
 .link-contacts-header {
-  color: #757575;
+  color: var(--mail-color-text);
 }
 .webstudio-header .list-nav .active {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 /* main */
 /* hero */
@@ -69,10 +79,7 @@ a {
   letter-spacing: 0.06em;
   cursor: pointer;
 }
-.hero-button:hover {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-}
+.hero-button:hover,
 .hero-button:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -93,27 +100,23 @@ a {
   margin: -1px;
 }
 .privileges-title {
-  color: #212121;
+  color: var(--secondary-color-text);
   font-weight: 700;
-  font-size: 14px;
+
   line-height: 1.15;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 .privileges-subtitle {
-  color: #757575;
-  font-size: 14px;
   line-height: 1.7;
-  letter-spacing: 0.03em;
 }
 /* we-do */
 .we-do-title,
 .team-title {
+  color: var(--secondary-color-text);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
-  letter-spacing: 0.03em;
 }
 
 /* team */
@@ -124,19 +127,16 @@ a {
   background-color: #ffffff;
 }
 .team-caption {
-  color: #212121;
+  color: var(--secondary-color-text);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
-  letter-spacing: 0.03em;
 }
 .team-subtitle {
-  color: #757575;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
-  letter-spacing: 0.03em;
 }
 
 /* footer */
@@ -144,11 +144,10 @@ a {
   background-color: #2f303a;
   line-height: 1.7;
   font-size: 14px;
-  letter-spacing: 0.03em;
 }
 .link-websudio-footer {
   color: #ffffff;
-  font-family: Raleway;
+  font-family: var(--secondary-font-family);
   font-weight: 700;
   font-size: 25px;
   line-height: 1.2;
@@ -157,24 +156,21 @@ a {
   color: #ffffff;
   font-style: normal;
 }
+.link-footer-contacts:hover,
+.link-footer-contacts:focus {
+  color: var(--accent-color);
+}
 .link-footer-contacts {
   color: rgba(255, 255, 255, 0.6);
 }
 /* portfolio */
 .works-button {
-  color: #212121;
+  color: var(--secondary-color-text);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
-  letter-spacing: 0.03em;
 }
-.works-button:hover {
-  background: #2196f3;
-  color: #ffffff;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-}
+.works-button:hover,
 .works-button:focus {
   background: #2196f3;
   color: #ffffff;
@@ -182,20 +178,19 @@ a {
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 }
+
 .item-example {
   background: #f5f4fa;
   border-radius: 4px;
 }
 .example-title {
-  color: #212121;
+  color: var(--secondary-color-text);
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
 .example-subtitle {
-  color: #757575;
   font-size: 16px;
   line-height: 1.87;
-  letter-spacing: 0.03em;
 }
